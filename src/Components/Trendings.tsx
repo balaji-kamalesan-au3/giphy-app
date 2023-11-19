@@ -60,7 +60,7 @@ export default function Trendings(){
       <span className="text-[28px] font-[600] ml-[20px] ">Trendings</span>
     </div>
     <div className="flex justify-center">
-    {loading && <ImageRenderComponent src={Loading} />}
+        {loading && <div id="loading"><ImageRenderComponent src={Loading} /></div>}
     {!loading &&
       <div className="flex flex-col justify-center items-center" >
           <ImageGrid components={imageComponents} />

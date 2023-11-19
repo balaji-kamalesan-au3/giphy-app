@@ -74,6 +74,15 @@ serve -s build
 
 8. Open http://localhost:3000 to view it in the browser
 
+9. Run Cypress Test cases
+
+```sh
+
+npm run start
+
+npm run cy:run
+```
+
 <br/>
 
 

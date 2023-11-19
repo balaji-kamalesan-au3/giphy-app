@@ -218,7 +218,7 @@ export function ImageRenderComponent({src} : {src : string}) {
 export default function ImageComponent({ image }: { image: TImageObject }) {
 
   return (
-    <div className='min-h-[300px] max-h-[400px] px-[2%] py-[2%] border-b-[3px] min-w-[300px] max-w-[400px]'>
+    <div className='image-container min-h-[300px] max-h-[400px] px-[2%] py-[2%] border-b-[3px] min-w-[300px] max-w-[400px]'>
       <Suspense>
         <ImageRenderComponent src={ image.images.original.url} />
       </Suspense>

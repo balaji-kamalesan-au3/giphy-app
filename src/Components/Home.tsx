@@ -50,7 +50,7 @@ export default function Home(){
     const tempComponents = apiData?.data.map((img: TImageObject) => <ImageComponent image={img} key={img.id} />)
     if(tempComponents)
       setImageComponents(tempComponents);
-  },[apiData])
+  }, [apiData, imageComponents.length])
 
   // when search is clicked I just change the search url which in turn calls my Custom hook to change the data, simple chaining technique which is properly controlled
   function onSearchClick() {
@@ -112,7 +112,7 @@ function SearchBox(props : TSearchBox){
 export function IconComponent({ Icon, className,onSearch }: { Icon: IconType, className : string,onSearch?: () => void }){
   return (
     <IconContext.Provider value={{ className:className  }} >
-      <div onClick={onSearch?onSearch:()=> {}}>
+      <div id="search-action" onClick={onSearch?onSearch:()=> {}}>
         <Icon />
       </div>
     </IconContext.Provider>
