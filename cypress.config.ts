@@ -1,12 +1,12 @@
 import { defineConfig } from "cypress";
 export default defineConfig({
-  projectId: "ghvcei",
-  video: false,
+	projectId: "ghvcei",
+	video: false,
 
-  e2e: {
-    baseUrl: "http://localhost:3000",
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
-  },
+	e2e: {
+		baseUrl: "http://localhost:3000",
+   		setupNodeEvents(on, config) {
+			// implement node event listeners here
+		},
+	},
 });

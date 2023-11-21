@@ -6,7 +6,6 @@
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
@@ -19,11 +18,8 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": "./src",
-    "types": [
-      "cypress",
-      "@testing-library/cypress"
-    ]
+	"baseUrl": "./src", // Setting the base directory for resolving non-relative module names
+	"types": ["cypress", "@testing-library/cypress"]
   },
   "include": [
     "src"
